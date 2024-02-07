@@ -1,0 +1,408 @@
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #0B60B0;
+    --cor-titulos: #40A2D8;
+    --cor-paragrafos: #12298f;
+    --cor-texto_botao: #ffffff;
+    --cor-hover: #3C3633;
+    --cor-segundo_hover: #3C3633;
+
+    --fonte-primaria: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    max-width: 100%;
+    margin: auto;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--cor-primaria);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+    border: 3px solid var(--cor-primaria);
+}
+
+.logo-alura img {
+    padding: 2.5rem 0 2.5rem 0;
+    cursor: pointer;
+}
+
+.conteudo-principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 6% 5% 0 0;
+    gap: 2.75rem;
+}
+
+.conteudo-principal-secao {
+    display: flex;
+    flex-direction: column;
+    padding: 11.11% 0 0 3%;
+}
+
+.texto {
+    background-color: transparent;
+    border: none;
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--cor-secundaria);
+    text-transform: lowercase;
+    resize: none;
+}
+
+.texto::placeholder {
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+    text-transform: none;
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+.texto::-webkit-scrollbar {
+    width: 12px;
+}
+
+.texto::-webkit-scrollbar-track {
+    background: var(--cor-primaria);
+}
+
+.texto::-webkit-scrollbar-thumb {
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+    border: 3px solid var(--cor-primaria);
+}
+
+.conteudo-principal-aviso {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 15px 0;
+    gap: 8px;
+}
+
+.conteudo-principal-aviso img {
+    width: 16px;
+    height: 16px;
+}
+
+.conteudo-principal-aviso p {
+    color: var(--cor-paragrafos);
+    font-family: var(--fonte-primaria);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.conteudo-principal-botoes {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.botao-criptografar {
+    align-items: flex-start;
+    width: 50%;
+    padding: 1.5rem;
+
+    border-radius: 1.5rem;
+    border: none;
+    background: var(--cor-secundaria);
+    cursor: pointer;
+    gap: 8px;
+
+    color: var(--cor-texto_botao);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.botao-criptografar:hover {
+    background-color: var(--cor-hover);
+}
+
+.botao-descriptografar {
+    align-items: flex-start;
+    width: 50%;
+    padding: 1.5rem;
+
+    border-radius: 1.5rem;
+    border: 1px solid var(--cor-secundaria);
+    background: transparent;
+    cursor: pointer;
+    gap: 8px;
+
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.botao-descriptografar:hover {
+    background-color: var(--cor-segundo_hover);
+}
+
+.conteudo-principal-mensagens {
+    padding: 40px 0 0 0;
+}
+
+.conteudo-principal-caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 640px;
+    flex-shrink: 0;
+
+    background-color: var(--cor-texto_botao);
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.166);
+    gap: 40px;
+}
+
+.conteudo-principal-caixa img {
+    width: 270px;
+}
+
+.conteudo-principal-informacoes h2 {
+    text-align: center;
+    color: var(--cor-titulos);
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 17px;
+}
+
+.conteudo-principal-informacoes p {
+    text-align: center;
+    color: var(--cor-paragrafos);
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 0 40px;
+}
+
+.conteudo-area-de-copia {
+    padding: 40px 0 0 0;
+    display: none;
+}
+
+.conteudo-principal-area-de-copia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 640px;
+    flex-shrink: 0;
+
+    background-color: var(--cor-texto_botao);
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.166);
+    gap: 55px;
+}
+
+.conteudo-principal-area-de-copia .texto-destino {
+    background-color: transparent;
+    border: none;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--cor-secundaria);
+    text-transform: lowercase;
+    resize: none;
+    cursor: default;
+}
+
+.texto-destino::-webkit-scrollbar {
+    width: 12px;
+}
+
+.texto-destino::-webkit-scrollbar-track {
+    background: var(--cor-texto_botao);
+}
+
+.texto-destino::-webkit-scrollbar-thumb {
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+    border: 3px solid var(--cor-primaria);
+}
+
+.conteudo-principal-area-de-copia .botao-copiar {
+    width: 336px;
+    padding: 1.5rem;
+
+    border-radius: 1.5rem;
+    border: 1px solid var(--cor-secundaria);
+    background: transparent;
+    cursor: pointer;
+
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.botao-copiar:hover {
+    background-color: var(--cor-segundo_hover);
+}
+
+.rodape {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto_botao);
+    font-family: var(--fonte-primaria);
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .conteudo-principal {
+        flex-direction: column;
+        padding: 0 40px 0 40px;
+        gap: 0;
+    }
+
+    .conteudo-principal-secao {
+        padding: 11.11% 0 0 0;
+    }
+
+    .conteudo-principal-texto .texto {
+        width: 100%;
+    }
+
+    .conteudo-principal-caixa {
+        height: 133px;
+        width: auto;
+        max-width: none;
+    }
+
+    .conteudo-principal-area-de-copia {
+        width: auto;
+        height: 170px;
+        overflow: scroll;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .conteudo-principal-caixa img {
+        display: none;
+    }
+
+    .conteudo-principal-area-de-copia .texto-destino {
+        width: 100%;
+    }
+
+    .conteudo-principal-area-de-copia .botao-copiar {
+        width: 100%;
+    }
+
+    .rodape {
+        position: absolute;
+        width: 100%;
+        top: 145%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .conteudo-principal-botoes {
+        flex-direction: column;
+    }
+
+    .botao-criptografar,
+    .botao-descriptografar {
+        width: 100%;
+    }
+
+    .conteudo-principal-caixa {
+        height: 186px;
+        width: auto;
+        max-width: none;
+    }
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

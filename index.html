@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Decodificador de texto</title>
+</head>
+    <body>
+        <header class="logo-alura">
+            <img src="/assets/Logo.png" alt="logo Alura">
+        </header>
+        <main class="conteudo-principal">
+            <section class="conteudo-principal-secao">
+                <div class="conteudo-principal-texto">
+                    <textarea class="texto"  placeholder="Digite seu texto aqui:" id="areaTexto" spellcheck="false" cols="40" rows="7"></textarea>
+                </div>
+                <div class="conteudo-principal-aviso">
+                    <img src="/assets/bi_exclamation-circle-fill.png" alt="">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="conteudo-principal-botoes">
+                    <button class="botao-criptografar" onclick="criptografia()" id="btn_criptor" type="submit">Criptografar</button>
+                    <button class="botao-descriptografar" onclick="descriptografia()" id="btn_descriptor" type="submit">Descriptografar</button>
+                </div>
+            </section>
+            <section class="conteudo-principal-mensagem">
+                <div class="conteudo-principal-caixa">
+                    <img src="/assets/High quality products 1 1.svg" alt="">
+                    <div class="conteudo-principal-informacoes">
+                        <h2>Nenhuma mensagem encontrada</h2>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="conteudo-area-de-copia">
+                <div class="conteudo-principal-area-de-copia">
+                    <textarea readonly="true" class="texto-destino"  spellcheck="false" id="areaCopia" cols="25" rows="9"></textarea>
+                    <button class="botao-copiar" id="botaoCopiar">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <footer class="rodape">
+            <p>Desenvolvido por Alex Rocha</p>
+        </footer>
+        <script src="/scripts/javascript.js"></script>
+    </body>
+</html>
